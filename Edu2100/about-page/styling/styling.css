@@ -1,0 +1,1042 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.show-img-data {
+  display: block;
+}
+
+.hide-img-data {
+  display: none;
+}
+
+/*  Variables */
+:root {
+  --main-heading-font-size: 4.4rem;
+  --main-heading-font-weight: 800;
+  /* about-section  */
+  --about-heading-font-size: 2.2rem;
+  --about-heading-font-weight: 700;
+  --about-heading-text-color: #333333;
+
+  --about-mpara-font-size: 1.2rem;
+  --about-mpara-font-weight: 600;
+
+  --about-mpara2-font-size: 1rem;
+  --about-mpara2-font-weight: 500;
+  --about-mpara2-text-color: #666666;
+  /* School */
+  --school-heading-font-weight: 700;
+  --school-heading-font-size: 1.2rem;
+  --school-heading-color: #8f3ae2;
+
+  --school-title-font-weight: 600;
+  --school-title-font-size: 1.5rem;
+  --school-title-color: #333333;
+
+  --school-schoolpara-font-size: 0.7rem;
+  --school-schoolpara-font-weight: 500;
+  --school-schoolpara-color: #666666;
+
+  --school-arrow-title-font-size: 0.7rem;
+  --school-arrow-title-font-weight: 500;
+  --school-arrow-title-color: #666666;
+
+  --features-heading-font-size: 1.2rem;
+  --features-heading-font-weight: 700;
+  --features-heading-color: #00b0f0;
+
+  --feature-subheading-font-size: 1.5rem;
+  --feature-subheading-font-weight: 600;
+  --feature-subheading-color: #333333;
+
+  --feature-featurepara-font-size: 0.7rem;
+  --feature-featurepara-font-weight: 500;
+  --feature-featurepara-color: #666666;
+
+  --feature-boxex-content-font-size: 1rem;
+  --feature-boxex-content-font-weight: 600;
+  --feature-boxex-content-color: #ffffff;
+
+  --feature-fempara-font-size: 0.7rem;
+  --feature-fempara-font-weight: 500;
+  --feature-fempara-color: #ffffff;
+
+  --stats-stats-heading-font-size: 2.2rem;
+  --stats-stats-heading-font-weight: 700;
+  --stats-stats-heading-color: #333333;
+
+  --stats-statsmpara-font-size: 1rem;
+  --stats-statsmpara-font-weight: 500;
+  --stats-statsmpara-color: #666666;
+
+  --stats-stats-num-text-font-size: 2.6rem;
+  --stats-stats-num-text-font-weight: 600;
+  --stats-stats-num-text-color: #333333;
+
+  --stats-statspara-font-size: 0.7rem;
+  --stats-statspara-font-weight: 500;
+  --stats-statspara-color: #666666;
+
+  --warrior-heading-font-size: 2.2rem;
+  --warrior-heading-font-weight: 700;
+  --warrior-heading-color: #333333;
+
+  --warriormpara-font-size: 1rem;
+  --warriormpara-font-weight: 500;
+  --warriormpara-color: #666666;
+
+  --warrior-statsmpara-font-size: 1rem;
+  --warrior-statsmpara-font-weight: 500;
+  --warrior-statsmpara-color: #666666;
+
+  --warrior-statsmpara-font-size: 1rem;
+  --warrior-statsmpara-font-weight: 500;
+  --warrior-statsmpara-color: #666666;
+
+  --help-heading-font-size: 2.2rem;
+  --help-heading-font-weight: 700;
+  --help-heading-color: #333333;
+
+  --helpmpara-font-size: 1rem;
+  --helpmpara-font-weight: 500;
+  --helpmpara-color: #666666;
+
+  --btn-background-color: #00b0f0;
+  --btn-border-radius: 8px;
+  --btn-color: #ffffff;
+  --btn-font-size: 1rem;
+  --btn-heading-font-weight: 600;
+}
+
+/* herosection styling here */
+.backimag {
+  background-image: url(../assets/about-bg.svg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 0px 0px 150px 150px;
+}
+
+.hero-section-heading h1 {
+  margin-top: 40px;
+  text-align: center;
+  color: #fdce49;
+  font-size: var(--main-heading-font-size);
+  font-weight: var(--main-heading-font-weight);
+  text-transform: capitalize;
+}
+
+.hero-section-heading h1 span {
+  text-align: center;
+  color: #21f274;
+  font-size: var(--main-heading-font-size);
+  font-weight: var(--main-heading-font-weight);
+  text-transform: capitalize;
+}
+
+.img1 img {
+  width: 100%;
+}
+
+/* button styling here ... */
+
+.d-button {
+  border: 2px solid #00b0f0;
+  width: 172px;
+  max-width: 100%;
+  border-radius: 8px;
+  height: 58px;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  background-color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.d-button span {
+  background-color: #00b0f0;
+  color: #fff;
+  height: 58px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  width: 172px;
+  max-width: 100%;
+  border-radius: 8px;
+  position: absolute;
+  transition: all 0.4s ease-out;
+  display: block;
+  line-height: 58px;
+  z-index: 1;
+  transform: translate(0px, -38px);
+}
+
+.d-button span a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.d-button:hover span {
+  transform-origin: left;
+  transform: translate(-6px, -29px);
+}
+
+/* about section styling here */
+
+.heading h1 {
+  margin-top: 70px;
+  text-align: center;
+  font-weight: var(--about-heading-font-weight);
+  font-size: var(--about-heading-font-size);
+  margin-bottom: 20px;
+}
+
+.container .mparap {
+  margin-top: 20px;
+  color: #666666;
+  text-align: center;
+  font-weight: var(--about-mpara-font-weight);
+  font-size: var(--about-mpara-font-size);
+}
+
+/* Schools styling  here */
+
+.school-shape {
+  background-image: url(../assets/school-shap.svg);
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.school-icons-circle {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  border-radius: 50%;
+  background: #8f3ae2;
+  padding: 10px;
+  /* margin-left: 17px; */
+}
+
+.icon-circle img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.school-heading h3 {
+  color: #8f3ae2;
+  margin-top: 10px;
+  font-size: var(--school-heading-font-sizet);
+  font-weight: var(--school-heading-font-weight);
+}
+
+.title {
+  font-size: var(--school-title-font-size);
+  font-weight: var(--school-title-font-weight);
+  color: var(--school-title-color);
+}
+
+.schoolpara {
+  color: var(--school-schoolpara-color);
+  font-size: var(--school-schoolpara-font-size);
+  font-weight: var(--school-schoolpara-font-weight);
+  margin-top: 20px;
+}
+
+.arrow-icon {
+  display: flex;
+}
+.arrow-icon p {
+  margin-left: 20px;
+  margin-top: 13px;
+  color: var(--school-arrow-title-color);
+  font-size: var(--school-arrow-title-font-size);
+  font-weight: var(--school-arrow-title-font-weight);
+}
+
+.arrow-image p {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Student styling here */
+
+.student-shape {
+  background-image: url(../assets/student-shap.svg);
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.student-heading {
+  color: #0068ff;
+  margin-top: 10px;
+  font-size: var(--school-heading-font-size);
+  font-weight: var(--school-heading-font-weight);
+}
+.student-subheading {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24.8px;
+}
+
+.student-icons-circle {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: #0068ff;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.student-icons-circle img {
+  width: 100%;
+  padding: 5px;
+  height: 100%;
+}
+
+/* Teacher styling here */
+
+.teacher-shape {
+  background-image: url(../assets/teacher-shap.svg);
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.teacher-shape img {
+  margin-top: -25px;
+}
+
+.teacher-heading {
+  color: #92d050;
+  margin-top: 10px;
+  font-size: var(--school-heading-font-size);
+  font-weight: var(--school-heading-font-weight);
+}
+
+.teacherpara {
+  color: var(--school-schoolpara-color);
+  font-weight: var(--school-schoolpara-font-weight);
+  font-size: var(--school-schoolpara-font-size);
+  margin-top: 20px;
+}
+
+.teacher-icons-circle {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: #92d050;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.teacher-icons-circle img {
+  width: 100%;
+  padding: 5px;
+  height: 100%;
+}
+
+/* Partners styling here */
+
+.partner-heading {
+  color: #00b0f0;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.partner-subheading {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24.8px;
+}
+
+.partnerpara {
+  color: var(--school-schoolpara-color);
+  font-weight: var(--school-schoolpara-font-weight);
+  font-size: var(--school-schoolpara-font-size);
+  margin-top: 20px;
+}
+
+.partner-icons-circle {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background: #00b0f0;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.partner-icons-circle img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.partner-shape {
+  background-image: url(../assets/pentagon-shap.svg);
+  background-repeat: no-repeat;
+  width: 79%;
+  height: auto;
+}
+.partner-shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Features styling here */
+
+.features-div1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-heading {
+  color: var(--features-heading-color);
+  font-size: var(--features-heading-font-size);
+  font-weight: var(--features-heading-font-weight);
+  margin-top: 10px;
+}
+
+.feature-subheading {
+  color: var(--feature-subheading-color);
+  font-weight: var(--feature-subheading-font-weight);
+  font-size: var(--feature-subheading-font-size);
+  line-height: 30px;
+}
+.featurepara {
+  color: var(--feature-featurepara-color);
+  font-weight: var(--feature-featurepara-font-weight);
+  font-size: var(--feature-featurepara-font-size);
+  margin-top: 20px;
+}
+
+.mainbox {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.icons img {
+  width: 30%;
+  height: auto;
+  padding: 10px;
+}
+
+.boxex-content h6 {
+  margin-top: 45px;
+  font-size: var(--feature-boxex-content-font-size);
+  color: var(--feature-boxex-content-color);
+  font-weight: var(--feature-boxex-content-font-weight);
+  padding: 2px 5px 10px;
+}
+
+.boxex-content p {
+  /* margin-top: 15px; */
+  font-size: var(--feature-fempara-font-size);
+  font-weight: var(--feature-fempara-font-weight);
+  color: var(--feature-fempara-color);
+  padding: 10px 5px;
+}
+
+.box1 {
+  width: 13.5em;
+  height: 13.5em;
+  border-radius: 8px;
+  background: #92d050;
+  padding: 10px 5px;
+}
+.box2 {
+  width: 13.5em;
+  height: 13.5em;
+  border-radius: 8px;
+  background: #d40071;
+  padding: 5px;
+}
+.boxes3 {
+  width: 13.5em;
+  height: 13.5em;
+  border-radius: 8px;
+  background: #8f3ae2;
+  padding: 5px;
+}
+
+.boxes4 {
+  width: 13.5em;
+  height: 13.5em;
+  border-radius: 8px;
+  background: #ff6e42;
+  padding: 5px;
+}
+
+.boxes5 {
+  width: 13.5em;
+  height: 13.5em;
+  border-radius: 8px;
+  background: #00b0f0;
+  padding: 5px;
+}
+
+/* Stats styling here... */
+
+.stats-heading {
+  text-align: center;
+  font-weight: var(--stats-stats-heading-font-weight);
+  font-size: var(--stats-stats-heading-font-size);
+  line-height: 33px;
+  color: var(--stats-stats-heading-color);
+}
+
+.statsmpara {
+  text-align: center;
+  color: var(--stats-statsmpara-color);
+  font-size: var(--stats-statsmpara-font-size);
+  font-weight: var(--stats-statsmpara-font-weight);
+  margin-top: 22px;
+}
+.stats-shape {
+  background-image: url(../assets/stats-hegaon.svg);
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+}
+
+.stats-shape img {
+  width: 100%;
+}
+
+.stats-main {
+  display: flex;
+  gap: 20px;
+  margin: 50px 0;
+  align-items: center;
+}
+
+.stats-head {
+  font-weight: var(--stats-stats-heading-font-weight);
+  font-size: var(--stats-stats-heading-font-size);
+  max-width: 120px;
+  width: 100%;
+  border-right: 1px solid #e0d9ec;
+}
+
+.plux {
+  color: #00b0f0;
+}
+
+.stats-head p {
+  color: #00b0f0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.stats-content p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #666666;
+}
+
+.vl {
+  border: 2px solid #e0d9ec;
+  margin: 0 auto;
+  height: 60px;
+}
+
+/* warriors styling here ... */
+.main-heading {
+  margin-bottom: 124px;
+}
+.warrior-heading {
+  text-align: center;
+  font-weight: var(--warrior-heading-font-weight);
+  font-size: var(--warrior-heading-font-size);
+  line-height: 33px;
+  color: var(--warrior-heading-color);
+  margin-bottom: 25px;
+}
+
+.warriormpara {
+  font-weight: var(--warriormpara-font-weight);
+  font-size: var(--warriormpara-font-size);
+  color: var(--warriormpara-color);
+  text-align: center;
+  line-height: 25px;
+}
+
+.backg-shap {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: #d40071;
+  border-radius: 100% 100% 0 100%;
+  max-width: 228px;
+  height: 228px;
+  position: relative;
+}
+
+.backg-shap img {
+  position: absolute;
+  top: -3.99rem;
+  right: -1.3rem;
+}
+
+.amit-content h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14.5px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.amit-content h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #8f3ae2;
+}
+
+.amit-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  color: #666666;
+}
+/* rajat styling here */
+
+.rajat-backg-shap {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: #ff6e42;
+  border-radius: 100% 100% 0 0;
+  max-width: 245px;
+  height: 228px;
+  position: relative;
+}
+
+.rajat-backg-shap img {
+  position: absolute;
+  top: -5.1rem;
+  right: -1rem;
+}
+
+.rajat-content h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14.5px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.rajat-content h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ff6e42;
+}
+
+.rajat-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  color: #666666;
+}
+
+/* meghana styling here ... */
+
+.meghana-backg-shap {
+  width: 100%;
+  background-repeat: no-repeat;
+  background: #8f3ae2;
+  border-radius: 0px;
+  max-width: 228px;
+  height: 228px;
+  position: relative;
+}
+
+.meghana-backg-shap img {
+  position: absolute;
+  top: -3.99rem;
+  right: 1.7rem;
+}
+
+.meghana-content h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14.5px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.meghana-content h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #8f3ae2;
+}
+
+.meghana-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  color: #666666;
+}
+
+/* rahul styling here ... */
+
+.rahul-backg-shap {
+  width: 100%;
+  background-repeat: no-repeat;
+  background: #ffcc00;
+  border-radius: 0px 200px 0px 0px;
+  max-width: 228px;
+  height: 228px;
+  position: relative;
+}
+
+.rahul-backg-shap img {
+  position: absolute;
+  top: -3.99rem;
+  right: 0.3rem;
+}
+
+.rahul-content h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14.5px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.rahul-content h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffcc00;
+}
+
+.rahul-content p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  color: #666666;
+}
+
+/* how can help you styling here ... */
+
+.help-heading {
+  font-weight: var(--help-heading-font-weight);
+  font-size: var(--help-heading-font-size);
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--help-heading-color);
+}
+
+.helpmpara {
+  font-weight: var(--helpmpara-font-weight);
+  font-size: var(--helpmpara-font-size);
+  line-height: 25px;
+  text-align: center;
+  color: var(--helpmpara-color);
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  padding: 1em;
+  border-radius: 3px;
+  max-width: 24em;
+}
+
+.media-heading {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.media-mpara {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+}
+.media-rightmpara {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+}
+.media-object {
+  margin-right: 1em;
+}
+.media-body {
+  flex: 1;
+}
+.media-heading {
+  margin-top: 2.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: right;
+  color: #333333;
+}
+.media-mpara p {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: right;
+  color: #666666;
+}
+
+.media-headingsecond {
+  text-align: start;
+  margin-top: 2.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.help-image {
+  display: flex;
+}
+
+/* Responsive styling here ... */
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .hero-section-heading h1 {
+    font-size: 50px;
+  }
+  .hero-section-heading h1 span {
+    font-size: 50px;
+  }
+
+  .hero-overlay span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .hero-overlay img {
+    width: 100%;
+    /* height: auto; */
+  }
+  .mpara {
+    text-align: center;
+  }
+  .school-shape {
+    margin-bottom: 0rem;
+    background-size: cover;
+    padding-bottom: 35px;
+    height: 100%;
+  }
+  .school-icons-circle {
+    margin: auto 0;
+    margin: 40px auto;
+  }
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
+  .school-heading {
+    text-align: center;
+  }
+  .student-shape {
+    margin-bottom: 0rem;
+    background-size: cover;
+    padding-bottom: 35px;
+    height: 100%;
+  }
+  .school-shape img {
+    width: 100%;
+  }
+  .student-icons-circle {
+    margin: 40px auto;
+  }
+  .student-heading {
+    text-align: center;
+  }
+
+  .teacher-shape {
+    margin-bottom: 0rem;
+    background-size: cover;
+    padding-bottom: 35px;
+    height: 100%;
+  }
+  .teacher-shape img {
+    width: 100%;
+  }
+  .teacher-icons-circle {
+    margin: 40px auto;
+  }
+  .teacher-heading {
+    text-align: center;
+  }
+  .partner-shape {
+    margin-bottom: 1.3rem;
+    background-size: cover;
+    width: auto;
+  }
+  .partner-icons-circle {
+    margin: 0px auto;
+  }
+  .partner-heading {
+    text-align: center;
+  }
+  .features-div1 {
+    display: block;
+  }
+  .feature-heading {
+    text-align: center;
+    font-size: 20px;
+  }
+  .feature-subheading {
+    text-align: center;
+    font-size: 20px;
+  }
+  .boxes {
+    display: block;
+  }
+  .boxex-content {
+    text-align: center;
+  }
+  .boxex-content p {
+    text-align: center;
+  }
+  .featurepara {
+    text-align: center;
+    font-size: 15px;
+  }
+  .icons {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .box1 {
+    width: 100%;
+    height: 13.5em;
+    border-radius: 8px;
+    background: #92d050;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .box2 {
+    width: 100%;
+    height: 13.5em;
+    border-radius: 8px;
+    background: #d40071;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  .mainbox {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .boxes3 {
+    margin: 0px auto;
+    width: 100%;
+    height: 13.5em;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .boxes4 {
+    width: 100%;
+    height: 13.5em;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .boxes5 {
+    width: 100%;
+    height: 13.5em;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  .statsmpara {
+    margin: auto;
+  }
+  .backg-shap {
+    margin: 0 auto;
+  }
+  .rajat-backg-shap {
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .meghana-backg-shap {
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .rahul-backg-shap {
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .warrior-heading {
+    text-align: center;
+    font-size: 25px;
+  }
+  .media {
+    padding: inherit;
+  }
+  .media-heading {
+    text-align: center;
+  }
+  .media-headingsecond {
+    text-align: center;
+  }
+  .media-mpara {
+    text-align: center;
+  }
+  .help-heading {
+    font-size: 1.8rem;
+  }
+  .help-image img {
+    width: 100%;
+  }
+  .flipCol .col-12:nth-child(1) {
+    order: 2;
+  }
+  .flipCol .col-12:nth-child(2) {
+    order: 1;
+  }
+}
+
+/* 
+
+
+*/

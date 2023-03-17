@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.show-img-data {
+  display: block;
+}
+
+.hide-img-data {
+  display: none;
+}
+
+/*  Variables */
+:root {
+  --main-heading: 2.3rem;
+  --main-heading-para: 1.05rem;
+  --main-heading-font-weight: 800;
+  --main-para-font-weight: 500;
+  --main-heading-color: #151515;
+  --main-para-color: #1c1c1c;
+  --chart-heading: 1.7rem;
+  --chart-para: 0.8rem;
+  --chart-heading-font-weight: 700;
+  --chart-para-font-weight: 500;
+  --chart-heading-color: #333333;
+  --chart-para-color: #666666;
+  --btn-background-color: #00b0f0;
+  --btn-border-radius: 8px;
+  --btn-color: #ffffff;
+  --btn-font-size: 1rem;
+  --btn-heading-font-weight: 600;
+}
+
+/* hero Section styling here ... */
+.sGap {
+  padding: 70px 0;
+}
+.row {
+  margin: 0;
+}
+
+.backimag {
+  background-image: url(../images/school-heroimage.svg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 0px 0px 150px 150px;
+}
+.hero > * {
+  flex: 1 1 25em;
+}
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-section-heading {
+  font-weight: var(--main-heading-font-weight);
+  font-size: var(--main-heading);
+  line-height: 53px;
+  color: var(--main-heading-color);
+}
+
+.hero-section-description {
+  font-weight: var(--main-para-font-weight);
+  font-size: var(--main-heading-para);
+  color: var(--main-para-color);
+}
+
+/* herosection border circle */
+
+/* height: 150px;
+border-radius: 100px;
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;
+border-bottom-right-radius: 100px;
+border-bottom-left-radius: 100px;
+border-bottom-right-radius: 0; */
+
+/* end boder circle  */
+
+/* button styling here ... */
+
+.d-button {
+  border: 2px solid #00b0f0;
+  width: 172px;
+  max-width: 100%;
+  border-radius: 8px;
+  height: 58px;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  background-color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.d-button span {
+  background-color: #00b0f0;
+  color: #fff;
+  height: 58px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  width: 172px;
+  max-width: 100%;
+  border-radius: 8px;
+  position: absolute;
+  transition: all 0.4s ease-out;
+  display: block;
+  line-height: 58px;
+  z-index: 1;
+  transform: translate(0px, -38px);
+}
+
+.d-button span a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.d-button:hover span {
+  transform-origin: left;
+  transform: translate(-6px, -29px);
+}
+/*  */
+
+.justi-e {
+  display: flex;
+  justify-content: end;
+}
+.justi-s {
+  display: flex;
+  justify-content: start;
+}
+.chart-image img {
+  width: 100%;
+}
+
+/* edu2100 styling here ... */
+
+.edumain {
+  background: #ffffff;
+  background-image: url(../Images/Vector.svg);
+  background-position: 20px 30px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 13px 94px rgba(76, 17, 145, 0.04);
+  border-radius: 70px;
+  padding: 3rem;
+}
+
+.eduimg {
+  margin: -18px 2rem;
+}
+
+.edumain .ed2100-heading {
+  margin-top: -19px;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--chart-heading-color);
+}
+
+.edumain .sub-ed2100-heading {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--chart-heading-color);
+}
+
+.eduhead {
+  font-weight: var(--chart-heading-font-weight);
+  font-size: 18px;
+  color: #333333;
+}
+/* End edu2100 styling here ... */
+
+/* 1. Transform section styling here.. */
+
+.trans-heading {
+  font-weight: var(--chart-heading-font-weight);
+  font-size: var(--chart-heading);
+  line-height: 43px;
+  text-align: right;
+  color: var(--chart-heading-color);
+}
+
+.trans-mpara {
+  font-weight: var(--chart-para-font-weight);
+  font-size: var(--chart-para);
+  line-height: 29px;
+  text-align: right;
+  color: var(--chart-para-color);
+}
+
+.chart-image img {
+  width: 100%;
+  margin-left: 50px;
+}
+
+/* 2rd Partner-Chart Styling here ... */
+
+.trans-heading2 {
+  font-weight: var(--chart-heading-font-weight);
+  font-size: var(--chart-heading);
+  line-height: 43px;
+  color: var(--chart-heading-color);
+  margin-left: 30px;
+}
+
+.trans-mpara2 {
+  font-weight: var(--chart-para-font-weight);
+  font-size: var(--chart-para);
+  line-height: 29px;
+  color: var(--chart-para-color);
+  margin-left: 30px;
+}
+.chart-image2 img {
+  width: 100%;
+}
+
+/* Gamify Section styling here ... */
+
+.gamifymaindiv {
+  background: lightblue url(../image/gamifybc.svg) no-repeat fixed center;
+}
+
+.gamify-heading {
+  padding: 3rem;
+  font-weight: var(--chart-heading-font-weight);
+  font-size: var(--chart-heading);
+  line-height: 42px;
+  text-align: center;
+  color: var(--chart-heading-color);
+}
+
+.icons img {
+  width: 17%;
+  height: auto;
+  margin-left: 30px;
+}
+
+.icons-mapra {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #0f2831;
+}
+
+/* Contact Form styling here ... */
+
+.contactmaindiv {
+  background: #92d050;
+  border-radius: 30px 0px 0px 30px;
+  margin-bottom: 30px;
+}
+
+.contact-heading h1 {
+  padding: 3rem 0 0 2.2rem;
+  font-weight: var(--chart-heading-font-weight);
+  font-size: var(--chart-heading);
+  line-height: 35px;
+  color: var(--btn-color);
+}
+.contact-heading p {
+  padding: 3rem 0 0 2.2rem;
+  font-weight: var(--chart-para-font-weight);
+  font-size: var(--chart-para);
+  text-transform: capitalize;
+  padding: 1rem 0 0 3rem;
+  color: var(--btn-color);
+}
+
+.contact-form {
+  padding: 3rem 0 0 3rem;
+}
+
+.firstn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.placeh {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #333333;
+}
+
+#inputPassword4 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.email-passd {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.company {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+#inputcompany {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.custom-control-label {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+@media (max-width: 650px) {
+  .sGap {
+    padding: 60px 0;
+  }
+  .ed2100-heading {
+    font-size: 15px;
+  }
+  .sub-ed2100-heading {
+    font-size: 15px;
+  }
+  .hero-section-heading h1 {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+  }
+  .hero-section-heading {
+    font-size: 1.5rem;
+  }
+  .btn-blue {
+    margin: 0 auto;
+    /* justify-content: center; */
+  }
+  .trans-heading {
+    text-align: center;
+    font-size: 20px;
+  }
+  .trans-mpara {
+    text-align: center;
+    font-size: 15px;
+  }
+  .trans-mpara {
+    margin-bottom: 19px;
+  }
+  .revertCol .row .col-12:nth-child(1) {
+    order: 2;
+  }
+  .revertCol .row .col-12:nth-child(2) {
+    order: 1;
+  }
+  .justi-e {
+    justify-content: center;
+  }
+  .justi-s {
+    justify-content: center;
+  }
+  .chart-image img {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .gamify-heading {
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    font-size: 10px;
+  }
+  .user-image img {
+    display: none;
+  }
+}
